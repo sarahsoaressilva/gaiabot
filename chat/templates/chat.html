@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +10,7 @@
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                ???
-            </a>
+            <a class="navbar-item" href="https://bulma.io"> ??? </a>
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -21,35 +20,36 @@
         </div>
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-            <a class="navbar-item">
-                Home
-            </a>
-            <a class="navbar-item">
-                Documentation
-            </a>
+            <a class="navbar-item" href="{% url 'home' %}"> Home </a>
+            <a class="navbar-item" href="{% url 'github' %}"> Documentation </a>
         </div>
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
                 <a class="button is-primary">
-                    <strong>Sign up</strong>
+                    <strong> Painel ADM </strong>
                 </a>
                 </div>
             </div> 
         </div>
     </nav>
+    
+    <!-- Start Section -->
     <section class="section">
         <div class="container">
             <!-- Header -->
             <h1 class="title is-2 has-text-success"> Olá! </h1>
-            <p class="subtitle is-3 has-text-weight-light"> Qual a sua dúvida hoje? </p>
+            <p class="subtitle is-3 has-text-weight-light"> O que vamos explorar hoje? </p>
             
             <div class="columns"> 
+                <!-- Column 1 -->
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
                             <div class="content">
-                                <p class="has-text-weight-light"> É iniciante sobre bioinformática e quer aprender mais? </p>
+                                <p class="has-text-weight-light"> 
+                                    Quer descobrir quanto sua cidade tem de emissão de carbono?
+                                </p>
                             </div>
                         </div>
                         <footer class="card-footer">
@@ -57,11 +57,13 @@
                         </footer>
                     </div>
                 </div>
+
+                <!-- Column 2 -->
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
                             <div class="content">
-                                <p class="has-text-weight-light"> Precisa de ajuda para entender algum artigo? </p>
+                                <p class="has-text-weight-light"> Precisa de ajuda para entender algum artigo? Confira com nossa IA </p>
                             </div>
                         </div>
                         <footer class="card-footer">
@@ -69,11 +71,13 @@
                         </footer>
                     </div>
                 </div>
+
+                <!-- Column 3 -->
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
                             <div class="content">
-                                <p class="has-text-weight-light"> Quais as principais noticias do mercado de bionformática? </p>
+                                <p class="has-text-weight-light"> ???? </p>
                             </div>
                         </div>
                         <footer class="card-footer">
